@@ -18,3 +18,6 @@
 # instruções logcore2
 + a mais simples é a logcore
 + so colocar a logcore.so e .dll na pasta raiz do gamemode
++
+# funcionalidade
++ esses plugins e includes servem para criar um bot de discord que conecta direto no gamemode
