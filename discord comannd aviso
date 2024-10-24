@@ -1,0 +1,19 @@
+DCMD:aviso(user,channel,params[])
+{
+	new DCC_Role:cdono = DCC_FindRoleById("subistitua pelo id do cargo que precisa para executar o comando");
+	new DCC_Guild:guilda = DCC_FindGuildById("subistitua pelo id do discord");
+	new DCC_Channel:av = DCC_FindChannelById("subistitua pelo id canal do discord");
+	new bool:temcargo = false;
+	DCC_HasGuildMemberRole(guilda, user, cdono, temcargo);
+	if(temcargo == false) return DCC_SendChannelMessage(channel, "Voce não tem permissão");
+	new aviso[1000];
+	if(sscanf(params,"s[29999]",aviso)) return DCC_SendChannelMessage(channel,"use !aviso [texto]");
+	new str[1000],username[33];
+	DCC_GetUserName(user, username,sizeof(username));
+	format(str,sizeof(str),"[DISCORD] %s: %s",username,aviso);
+	SendClientMessageToAll(AZUL_CLARO,str);
+	format(str,sizeof(str),"%s",aviso);
+	DCC_SendChannelMessage(av,str);
+
+	return 1;
+}
