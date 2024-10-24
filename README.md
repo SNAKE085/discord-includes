@@ -1,6 +1,6 @@
 # donwload discord-includes
-+ discord cmd https://www.mediafire.com/file/scshva6icsxzmmh/discord-cmd.inc/file
-+ discord connector https://www.mediafire.com/file/jft2mrvtax6ejo8/discord-connector.inc/file
++ discord cmd include https://www.mediafire.com/file/scshva6icsxzmmh/discord-cmd.inc/file
++ discord connector include https://www.mediafire.com/file/jft2mrvtax6ejo8/discord-connector.inc/file
 + discord connector plugin .so https://www.mediafire.com/file/i6n3jv3coxethp0/discord-connector.so/file
 + discord connector plugin .dll https://www.mediafire.com/file/d1f0f1zhna6e8ct/discord-connector.dll/file
 + logcore2 .so https://www.mediafire.com/file/aua58i4l2s5872j/log-core2.so/file
